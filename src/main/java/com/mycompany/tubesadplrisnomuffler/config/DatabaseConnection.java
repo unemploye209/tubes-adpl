@@ -11,7 +11,7 @@ public class DatabaseConnection {
 
     private static final String USER = "root";
 
-    private static final String PASSWORD = "ISI_PASSWORD_MYSQL_LU";
+    private static final String PASSWORD = "#!@007hcM";
 
     public static Connection getConnection() {
         try {
@@ -25,7 +25,7 @@ public class DatabaseConnection {
 
         } catch (SQLException e) {
             System.out.println("Koneksi database gagal!");
-            System.out.println(e.getMessage());
+            e.printStackTrace();
 
             return null;
         }
